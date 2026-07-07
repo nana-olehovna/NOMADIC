@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+
+# Python
+backend/.venv/
+backend/__pycache__/
+*.py[cod]
+
+# Django
+backend/db.sqlite3
+backend/media/
+
+# Build
+coverage/
