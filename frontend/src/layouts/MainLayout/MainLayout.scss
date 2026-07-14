@@ -1,0 +1,13 @@
+@use '../../styles/base/index' as mix;
+
+.mainLayoutWrapper {
+  width: 100%;
+  min-height: 100vh;
+  @include mix.flex-column();
+}
+
+.mainLayoutContentWrapper {
+  width: 100%;
+  @include mix.flex-column();
+  flex: 1;
+}

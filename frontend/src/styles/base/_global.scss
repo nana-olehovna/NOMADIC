@@ -1,0 +1,24 @@
+@use './mixins' as mix;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  @include mix.flex-column;
+  background-color: #f9c597;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
