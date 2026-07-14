@@ -1,3 +1,5 @@
+import './Button.scss'
+
 export default function Button({ variant, children, ...props }) {
   return (
     <button 
