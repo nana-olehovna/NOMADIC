@@ -1,19 +1,11 @@
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
+import { Logo, LinkToLoginButton, MenuButton, ThemeToggle } from "@/components";
 import { Navigation, MobileNavigation } from "@/navigation";
-import { ThemeToggle } from '../index'
-import { LinkToLoginButton, MenuButton } from '../Buttons/index'
 import './Header.scss'
 
 
-function Logo() {
-  return (
-    <div className='logoWrapper'>
-      <Link className='logo' to="/">NOMADIC</Link>
-    </div>
-  )
-}
+
 
 export default function Header() {
   const [moreOpen, setMoreOpen] = useState(false);

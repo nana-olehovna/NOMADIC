@@ -15,7 +15,8 @@ body {
   width: 100%;
   min-height: 100vh;
   @include mix.flex-column;
-  background-color: #f9c597;
+  background-color: antiquewhite;
+  color: #310101;
 }
 
 #root {

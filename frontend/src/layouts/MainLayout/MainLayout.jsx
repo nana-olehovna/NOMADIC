@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { Header } from "@/components"
+import { Header, Footer } from "@/components"
 import './MainLayout.scss'
 
 export default function MainLayout() {
@@ -9,6 +9,7 @@ export default function MainLayout() {
       <main className="mainLayoutContentWrapper">
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }
