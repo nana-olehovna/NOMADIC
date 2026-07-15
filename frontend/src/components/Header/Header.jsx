@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-import { Navigation } from '@/navigation'
+import { Navigation, MobileNavigation } from "@/navigation";
 import { ThemeToggle } from '../index'
 import { LinkToLoginButton, MenuButton } from '../Buttons/index'
 import './Header.scss'
@@ -25,8 +25,9 @@ export default function Header() {
       <div className="personalizationWrapper">
         <ThemeToggle />
         <LinkToLoginButton />
-        <MenuButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
+      <MenuButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <MobileNavigation menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </header>
   );
 }

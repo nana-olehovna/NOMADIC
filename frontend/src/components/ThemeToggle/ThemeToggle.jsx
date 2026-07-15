@@ -3,7 +3,7 @@ import './ThemeToggle.scss'
 export default function ThemeToggle() {
   return (
     <div className="themeToggleWraper">
-      Theme
+      <span className='themeToggleValue'>THEME</span>
     </div>
   )
 }

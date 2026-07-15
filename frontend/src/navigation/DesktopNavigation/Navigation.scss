@@ -16,6 +16,7 @@
 .headerNavItem {
   position: relative;
   height: 100%;
+  min-width: 80px;
   @include mix.flex-row($just: center);
 }
 
@@ -24,8 +25,9 @@
   text-transform: uppercase;
   text-decoration: none;
   font: inherit;
+  transition: color 0.3s ease;
   &:hover {
-    color: brown;
+    color: rgb(255, 157, 0);
   }
 }
 
@@ -34,6 +36,20 @@
   background: transparent;
   height: 100%;
   cursor: pointer;
+  @include mix.flex-row();
+}
+
+.arrowDiv {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: invert(1);
+  }
 }
 
 .dropdownHidden {
@@ -46,21 +62,44 @@
   position: absolute;
   top: calc(100% - 10px);
   left: -35px;
-  min-width: 200px;
-  border: 1px solid rgb(239, 130, 46);
-  background-color: rgb(197, 108, 0);
+  min-width: 250px;
+  border: 1px solid rgba(250, 235, 215, 0.312);
+  background-color: #310101;
+  animation: opacityIn 0.8s ease,
+             dropDown 0.8s ease;
 }
 
 .headerDropDownItem {
-  padding: 0.5rem;
-  &:hover {
-    background-color: rgb(210, 124, 18);
-  }
-  &:hover .headerDropdownLink {
-    color: brown;
-  }
+  height: 3rem;
 }
 
 .headerDropdownLink {
-  padding: 0.5rem 1rem;
+  @include mix.flex-column($just: center);
+  width: 100%;
+  height: 100%;
+  background-color: #310101;
+  transition: background-color 0.3s ease;
+  &:hover {
+    color: rgb(255, 157, 0);
+    background-color: #380101;
+  }
+}
+
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes dropDown {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

@@ -1,0 +1,17 @@
+@use "../../../styles/base/index" as mix;
+
+.mini {
+  @include mix.flex-column($just: center);
+  width: 90px;
+  height: 35px;
+  padding: 0.3rem;
+  color: antiquewhite;
+  border: 0.5px solid rgba(250, 235, 215, 0.451);
+  background: transparent;
+  text-transform: uppercase;
+  transition: background 0.2s ease, color 0.3s ease;
+  &:hover {
+    background: antiquewhite;
+    color: rgb(255, 157, 0);
+  }
+}

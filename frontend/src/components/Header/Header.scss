@@ -4,7 +4,7 @@ header {
   width: 100%;
   @include mix.flex-row ($just: space-between);
   padding: 0 2rem;
-  background-color: rgb(197, 108, 0);
+  background-color: #310101;
   height: 70px;
 }
 
@@ -29,4 +29,10 @@ header {
 
 .personalizationWrapper {
   @include mix.flex-row();
+}
+
+@include mix.mobile {
+  .personalizationWrapper {
+    display: none;
+  }
 }

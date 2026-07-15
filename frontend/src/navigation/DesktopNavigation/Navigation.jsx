@@ -26,6 +26,9 @@ export default function Navigation({ moreOpen, setMoreOpen }) {
             onClick={() => setMoreOpen((prev) => !prev)}
           >
             More
+            <div className="arrowDiv">
+              {moreOpen ? <img src="/icons/angle-small-up.svg" alt="arrow up" /> : <img src="/icons/angle-small-down.svg" alt="arrow down" />}
+            </div>
           </button>
           {/* Выпадашка: список дополнительных ссылок*/}
           <ul className={`headerDropDownList ${moreOpen ? "dropdownVisible" : "dropdownHidden"}`}>
@@ -33,6 +36,7 @@ export default function Navigation({ moreOpen, setMoreOpen }) {
               list={moreLinks}
               liClassName="headerDropDownItem"
               linkClassName="headerDropdownLink"
+              onClick={() => setMoreOpen(false)}
             />
           </ul>
         </li>

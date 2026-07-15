@@ -1,5 +1,11 @@
 .themeToggleWraper {
   min-width: 40px;
-  border: 1px solid white;
   padding: 0.3rem;
+}
+
+.themeToggleValue {
+  color: antiquewhite;
+  &:hover {
+    color: rgb(255, 157, 0);
+  }
 }
