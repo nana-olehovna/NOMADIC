@@ -42,4 +42,8 @@ export const moreLinks = [
     path: "/contacts",
     title: "Contacts",
   },
+  {
+    path: "/terms-and-privacy",
+    title: "Terms & Privacy",
+  },
 ];
