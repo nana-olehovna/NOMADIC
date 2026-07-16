@@ -9,29 +9,20 @@ footer {
 }
 
 .footerLogoPart {
-  height: 200px;
+  min-height: 70vh;
   width: 100%;
+  position: relative;
   @include mix.flex-column($just: center);
-  border-bottom: 0.5px solid rgba(250, 235, 215, 0.265);
 }
 
-.footerLinksPart {
-  width: 100%;
-  height: 200px;
-  @include mix.flex-column($just: center);
-  border-bottom: 0.5px solid rgba(250, 235, 215, 0.265);
-}
-
-.footerSubscriptionPart {
-  width: 100%;
-  height: 200px;
-  @include mix.flex-column($just: center);
-  border-bottom: 0.5px solid rgba(250, 235, 215, 0.265);
-}
 
 .footerBrandPart {
   width: 100%;
   height: 50px;
   @include mix.flex-column($just: center);
-  border-bottom: 0.5px solid rgba(250, 235, 215, 0.265);
+  font-size: 1.5rem;
+  color: rgba(250, 235, 215, 0.726);
+  letter-spacing: 0.3rem;
 }
+
+

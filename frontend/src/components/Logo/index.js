@@ -1,1 +1,1 @@
-export { default } from './Logo'
+export { default, LogoFullSize } from "./Logo";

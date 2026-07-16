@@ -1,12 +1,9 @@
 import './Button.scss'
 
-export default function Button({ variant, children, ...props }) {
+export default function Button({ className, children, ...props }) {
   return (
-    <button 
-      className={variant}
-      {...props}
-    >
+    <button className={className} {...props}>
       {children}
     </button>
-  )
+  );
 }

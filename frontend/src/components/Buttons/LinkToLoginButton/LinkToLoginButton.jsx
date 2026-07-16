@@ -8,7 +8,7 @@ export default function LinkToLoginButton() {
   return (
     <Button 
       type="button"
-      variant="mini"
+      className="mini"
       onClick={() =>  navigate("/login")}
     > Login
     </Button>

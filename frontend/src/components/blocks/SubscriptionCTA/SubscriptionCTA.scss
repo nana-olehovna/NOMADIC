@@ -1,0 +1,23 @@
+@use '../../../styles/base/index' as mix;
+
+.subscriptionCTA {
+  width: 100%;
+  padding: 6rem 3rem 0 3rem;
+  min-height: 50vh;
+  
+  @include mix.flex-column($just: center);
+}
+
+.ctaHeadliner {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: rgba(250, 235, 215, 0.944);
+}
+
+.ctaSubtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 4rem;
+  text-align: center;
+  color: rgba(250, 235, 215, 0.738);
+}

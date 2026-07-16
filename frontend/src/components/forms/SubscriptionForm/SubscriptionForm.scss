@@ -1,0 +1,22 @@
+@use '../../../styles/base/index' as mix;
+
+.subscriptionForm {
+  @include mix.flex-row();
+  margin-top: 3rem;
+}
+
+.textInput {
+  min-width: 270px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid rgba(250, 235, 215, 0.265);
+  outline: none;
+  color: rgb(255, 166, 49);
+  font-size: 1.7rem;
+  font-weight: 200;
+  padding: 0.8rem;
+  &::placeholder {
+    color: rgba(250, 235, 215, 0.217);
+  }
+}

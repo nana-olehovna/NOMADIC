@@ -1,15 +1,17 @@
-import { Logo, LinkToLoginButton } from "@/components";
+import { SubscriptionCTA, LogoFullSize } from "@/components";
 import './Footer.scss'
+
 
 export default function Footer() {
   return (
     <footer>
+      <SubscriptionCTA />
       <div className="footerLogoPart">
-        <Logo />
+        <LogoFullSize />
       </div>
-      {/* <div className="footerLinksPart">Links</div>
-      <div className="footerSubscriptionPart">Subscribe</div>
-      <div className="footerBrandPart">c Nomadic. sinse 2017</div> */}
+      <div className="footerBrandPart">
+        2017
+      </div>
     </footer>
-  )
+  );
 }

@@ -15,3 +15,33 @@
     transform: translateY(-2px);
   }
 }
+
+.logoFullSize {
+  @include mix.flex-row($just: space-evenly);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  letter-spacing: 3rem;
+  color: rgb(250, 235, 215);
+  -webkit-text-stroke: 0.5px rgb(250, 235, 215);
+  h1 {
+    font-weight: 600;
+    @include mix.flex-row($just: center);
+    text-align: center;
+  }
+}
+
+@include mix.tablet {
+  .logoFullSize{
+    font-size: clamp(2rem, 6.2vw, 5rem);
+    letter-spacing: 2rem;
+  }
+}
+
+@include mix.mobile {
+  .logoFullSize{
+    font-size: clamp(1rem, 6.2vw, 5rem);
+    letter-spacing: 1rem;
+  }
+}
